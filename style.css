@@ -1,0 +1,52 @@
+body {
+  background-color: darksalmon;
+}
+
+#container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 3px solid red;
+  width: 40%;
+  height: 40%;
+  padding: 10px;
+  left: 27%;
+  background-color: aquamarine;
+}
+
+h1 {
+  text-align: center;
+}
+
+#userInput {
+  margin: auto;
+}
+
+.input {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#calculate {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#calculate:hover {
+  background-color: darkgoldenrod;
+}
+
+#discountedPriceDisplay {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  font-size: 3rem;
+  top: 100px;
+  text-align: center;
+}
