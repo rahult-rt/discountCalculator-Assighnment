@@ -7,7 +7,13 @@ const discountedPriceDisplay = document.getElementById(
 
 //click event and discount calculation
 calculate.addEventListener("click", () => {
-  discountedPriceDisplay.innerHTML = `Discounted Price is: $${parseFloat(
-    sellingPrice.value * (1 - discount.value / 100)
-  ).toFixed(2)}`;
+  if (isNaN(sellingPrice.value) || isNaN(discount.value)) {
+    discountedPriceDisplay.innerHTML =
+      "Error : Please ensure only numbers are entered in input feild!!";
+  } else {
+    discountedPriceDisplay.innerHTML = `Discounted Price is: $${parseFloat(
+      sellingPrice.value * (1 - discount.value / 100)
+    ).toFixed(2)}`;
+  }
 });
+
